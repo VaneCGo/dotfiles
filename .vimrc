@@ -111,6 +111,10 @@ augroup END
 let g:neomake_ruby_enabled_makers = ['rubocop']
 " }}} neomake "
 
+" swift {{{ "
+nnoremap <silent> <leader>rs :!swift %<cr>
+" }}} swift "
+
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
 nnoremap <silent> <leader>es :so $MYVIMRC<cr>
 
