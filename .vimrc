@@ -7,9 +7,11 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'benekastah/neomake'
 Plug 'chiel92/vim-autoformat'
+Plug 'fishbullet/deoplete-ruby'
 Plug 'machakann/vim-highlightedyank'
 Plug 'raimondi/delimitMate'
 Plug 'sheerun/vim-polyglot'
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-endwise'
 Plug 'vim-airline/vim-airline'
@@ -88,6 +90,13 @@ augroup vimrc
   " Remove whitespace on save
   autocmd BufWritePre * :%s/\s\+$//e
 augroup end
+
+" deoplete {{{ "
+let g:deoplete#enable_at_startup = 1
+
+inoremap <expr><tab> pumvisible()? "\<c-n>" : "\<tab>"
+inoremap <expr><s-tab> pumvisible()? "\<c-p>" : "\<s-tab>"
+" }}} deoplete "
 
 " neomake {{{ "
 augroup neomake_commands
