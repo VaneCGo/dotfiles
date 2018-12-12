@@ -13,6 +13,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'mileszs/ack.vim'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'raimondi/delimitMate'
+Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
