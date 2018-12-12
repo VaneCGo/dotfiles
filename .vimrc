@@ -20,6 +20,7 @@ Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-multiple-cursors'
+Plug 'thecodedself/syntastic-swift'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
@@ -112,6 +113,8 @@ let g:neomake_ruby_enabled_makers = ['rubocop']
 " }}} neomake "
 
 " swift {{{ "
+let g:syntastic_swift_checkers = ['swiftpm', 'swift']
+
 nnoremap <silent> <leader>rs :!swift %<cr>
 " }}} swift "
 
