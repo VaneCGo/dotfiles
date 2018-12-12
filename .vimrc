@@ -6,6 +6,7 @@ call plug#begin()
 " Plugins
 Plug 'airblade/vim-gitgutter'
 Plug 'benekastah/neomake'
+Plug 'chiel92/vim-autoformat'
 Plug 'machakann/vim-highlightedyank'
 Plug 'raimondi/delimitMate'
 Plug 'sheerun/vim-polyglot'
@@ -74,6 +75,12 @@ nnoremap <silent> <leader><cr> :noh<cr>
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'tomorrow'
 " }}} airline "
+
+" autoformat {{{ "
+nnoremap <silent> <leader>f :Autoformat<cr>
+
+let g:formatters_ruby = ['rubocop']
+" }}} autoformat "
 
 augroup vimrc
   autocmd!
