@@ -73,6 +73,7 @@ noremap <down> STAHP
 nnoremap M <c-w>o
 nnoremap <leader>w :w<CR>
 nnoremap <silent> <leader><cr> :noh<cr>
+nnoremap <leader>n :e<space>
 
 " airline {{{ "
 let g:airline_powerline_fonts = 1
