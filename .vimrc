@@ -131,6 +131,10 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-l> <c-w>l
 "
 
+" NERDTree {{{ "
+let NERDTreeShowHidden=1
+" }}} NERDTree "
+
 set runtimepath+=/usr/local/opt/fzf
 
 " Open files
