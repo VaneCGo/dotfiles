@@ -90,7 +90,7 @@ let g:formatters_ruby = ['rubocop']
 " }}} autoformat "
 
 augroup vimrc
-  autocmd!
+  autocmd! " Remove all vimrc autocomands
 
   " Remove whitespace on save
   autocmd BufWritePre * :%s/\s\+$//e
@@ -106,7 +106,7 @@ inoremap <expr><s-tab> pumvisible()? "\<c-p>" : "\<s-tab>"
 " neomake {{{ "
 augroup neomake_commands
   autocmd!
-  autocmd! BufWritePost * Neomake
+  autocmd BufWritePost * Neomake
 augroup END
 
 let g:neomake_ruby_enabled_makers = ['rubocop']
