@@ -12,6 +12,7 @@ plugins=(
   zsh-autosuggestions
   git
   rails
+  tmux
 )
 
 source $ZSH/oh-my-zsh.sh
