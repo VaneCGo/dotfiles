@@ -136,11 +136,12 @@ nnoremap <c-l> <c-w>l
 let NERDTreeShowHidden=1
 " }}} NERDTree "
 
+" fzf {{{ "
 set runtimepath+=/usr/local/opt/fzf
 
-" Open files
 nnoremap <silent> <leader>O :Files<cr>
 nnoremap <silent> <leader>o :GFiles<cr>
+" }}} fzf "
 
 let g:ackprg = 'ag --vimgrep --smart-case'
 
