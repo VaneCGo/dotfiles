@@ -127,8 +127,10 @@ let g:syntastic_swift_checkers = ['swiftpm', 'swift']
 nnoremap <silent> <leader>rs :!swift %<cr>
 " }}} swift "
 
+" Config files quick access
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
 nnoremap <silent> <leader>es :so $MYVIMRC<cr>
+nnoremap <silent> <leader>ez :e! ~/.zshrc<cr>
 
 nnoremap <silent> - :NERDTreeFind<cr>
 nnoremap <silent> <leader>k :NERDTreeToggle<cr>
