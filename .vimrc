@@ -20,6 +20,7 @@ Plug 'raimondi/delimitMate'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
+Plug 'shougo/echodoc.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'terryma/vim-multiple-cursors'
@@ -108,6 +109,12 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible()? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible()? "\<c-p>" : "\<s-tab>"
 " }}} deoplete "
+
+" echodoc {{{ "
+set cmdheight=2
+
+let g:echodoc_enable_at_startup = 1
+" }}} echodoc "
 
 " neomake {{{ "
 augroup neomake_commands
