@@ -7,6 +7,7 @@ call plug#begin()
 Plug 'airblade/vim-gitgutter'
 Plug 'benekastah/neomake'
 Plug 'chiel92/vim-autoformat'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'fishbullet/deoplete-ruby'
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
