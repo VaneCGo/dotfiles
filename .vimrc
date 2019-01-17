@@ -91,7 +91,8 @@ let g:formatters_ruby = ['rubocop']
 " }}} autoformat "
 
 augroup vimrc
-  autocmd! " Remove all vimrc autocomands
+  " Remove all vimrc autocomands
+  autocmd!
 
   " Remove whitespace on save
   autocmd BufWritePre * :%s/\s\+$//e
