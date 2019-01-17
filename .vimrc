@@ -157,6 +157,9 @@ nnoremap <silent> <leader>O :Files<cr>
 nnoremap <silent> <leader>o :GFiles<cr>
 " }}} fzf "
 
+" Tags
+nmap t <c-]>
+
 let g:ackprg = 'ag --vimgrep --smart-case'
 
 " Repeat command in last tmux split. "-t !" refers to last pane
