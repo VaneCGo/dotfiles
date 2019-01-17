@@ -139,6 +139,10 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-l> <c-w>l
 "
 
+" Create splits
+nnoremap <leader>v <c-w>v
+nnoremap <leader>h <c-w>s
+
 " NERDTree {{{ "
 let NERDTreeShowHidden=1
 " }}} NERDTree "
