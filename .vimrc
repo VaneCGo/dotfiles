@@ -167,6 +167,7 @@ let g:ackhighlight = 1
 let g:ackprg = 'ag --vimgrep --smart-case'
 
 nnoremap <leader>f :Ack! -F ""<left>
+xnoremap <leader>f y:Ack! -F "<c-r>""
 " }}} Ack "
 
 " tagbar {{{ "
