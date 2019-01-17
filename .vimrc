@@ -162,7 +162,10 @@ nnoremap <silent> <leader>o :GFiles<cr>
 " Tags
 nmap t <c-]>
 
+" Ack {{{ "
+let g:ackhighlight = 1
 let g:ackprg = 'ag --vimgrep --smart-case'
+" }}} Ack "
 
 " tagbar {{{ "
 let g:tagbar_compact = 1
