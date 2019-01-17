@@ -131,6 +131,7 @@ nnoremap <silent> <leader>rs :!swift %<cr>
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
 nnoremap <silent> <leader>es :so $MYVIMRC<cr>
 nnoremap <silent> <leader>ez :e! ~/.zshrc<cr>
+nnoremap <silent> <leader>et :e! ~/.tmux.conf<cr>
 
 nnoremap <silent> - :NERDTreeFind<cr>
 nnoremap <silent> <leader>k :NERDTreeToggle<cr>
