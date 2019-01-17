@@ -12,6 +12,7 @@ Plug 'fishbullet/deoplete-ruby'
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
 Plug 'machakann/vim-highlightedyank'
+Plug 'majutsushi/tagbar'
 Plug 'mileszs/ack.vim'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'raimondi/delimitMate'
@@ -162,6 +163,11 @@ nnoremap <silent> <leader>o :GFiles<cr>
 nmap t <c-]>
 
 let g:ackprg = 'ag --vimgrep --smart-case'
+
+" tagbar {{{ "
+let g:tagbar_compact = 1
+nmap <silent> <leader>l :TagbarToggle<CR>
+" }}} tagbar "
 
 " Repeat command in last tmux split. "-t !" refers to last pane
 nnoremap <silent> <leader>i :silent !tmux send-keys -t \! Up Enter<cr>
