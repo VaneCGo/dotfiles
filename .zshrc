@@ -32,8 +32,6 @@ alias git="hub"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-HIST_STAMPS="mm/dd/yyyy"
-
 # Fastlane
 export PATH="$HOME/.fastlane/bin:$PATH"
 
@@ -56,10 +54,6 @@ function renamedb() {
   psql -h localhost -c "alter database $1 rename to $2"
 }
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 function restoredb() {
   rdd &&
   rdc &&
@@ -67,6 +61,10 @@ function restoredb() {
   rdm &&
   rdtp
 }
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # ZSH autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
