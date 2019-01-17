@@ -152,6 +152,9 @@ nnoremap <silent> <leader>o :GFiles<cr>
 
 let g:ackprg = 'ag --vimgrep --smart-case'
 
+" Repeat command in last tmux split. "-t !" refers to last pane
+nnoremap <silent> <leader>i :silent !tmux send-keys -t \! Up Enter<cr>
+
 " Copy to clipboard
 nnoremap <leader>y "+y
 xnoremap <leader>y "+y
