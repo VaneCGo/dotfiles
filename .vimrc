@@ -165,6 +165,8 @@ nmap t <c-]>
 " Ack {{{ "
 let g:ackhighlight = 1
 let g:ackprg = 'ag --vimgrep --smart-case'
+
+nnoremap <leader>f :Ack! -F ""<left>
 " }}} Ack "
 
 " tagbar {{{ "
