@@ -77,6 +77,7 @@ noremap <right> STAHP
 noremap <down> STAHP
 nnoremap M <c-w>o
 nnoremap <leader>w :w<CR>
+nnoremap <silent> <leader>x :qa<cr>
 nnoremap <silent> <leader><cr> :noh<cr>
 nnoremap <leader>n :e<space>
 
