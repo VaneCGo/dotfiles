@@ -67,6 +67,7 @@ set smartcase
 set softtabstop=2
 set splitbelow
 set splitright
+set termguicolors
 set updatetime=750
 set wildmenu
 
