@@ -6,11 +6,12 @@ DEFAULT_USER=`whoami`
 HIST_STAMPS="mm/dd/yyyy"
 
 plugins=(
+  # rails
   brew
   bundler
   git
-  # rails
   tmux
+  z
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
