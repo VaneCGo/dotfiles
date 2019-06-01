@@ -13,6 +13,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'majutsushi/tagbar'
+Plug 'mhinz/vim-mix-format'
 Plug 'mileszs/ack.vim'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'rafi/awesome-vim-colorschemes'
@@ -136,6 +137,10 @@ let g:syntastic_swift_checkers = ['swiftpm', 'swift']
 
 nnoremap <silent> <leader>rs :!swift %<cr>
 " }}} swift "
+
+" vim-mix-format {{{ "
+let g:mix_format_on_save = 1
+" }}} vim-mix-format
 
 " Config files quick access
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
