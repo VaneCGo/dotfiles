@@ -145,6 +145,7 @@ let g:neomake_message_sign = { 'text': '◉', 'texthl': 'NeomakeMessageSign' }
 let g:neomake_info_sign    = { 'text': '◉', 'texthl': 'NeomakeInfoSign' }
 
 let g:neomake_ruby_enabled_makers = ['rubocop']
+let g:neomake_elixir_enabled_makers = ['credo']
 " }}} neomake "
 
 " swift {{{ "
