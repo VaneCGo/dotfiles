@@ -119,6 +119,15 @@ set cmdheight=2
 let g:echodoc_enable_at_startup = 1
 " }}} echodoc "
 
+" fugitive {{{ "
+nmap <silent> <leader>-  :Gstatus<cr><c-n>
+nmap <silent> <leader>gb :Gblame<cr>
+nmap <silent> <leader>gd :Gvdiff<cr>
+nmap <silent> <leader>gg :Gbrowse<cr>
+
+xmap <silent> <leader>gg :Gbrowse<cr>
+" }}} fugitive "
+
 source ~/.vimrc_secrets
 " fugitive-gitlab {{{ "
 let g:fugitive_gitlab_domains = [gitlab_domain]
