@@ -21,9 +21,9 @@ Plug 'raimondi/delimitMate'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
-Plug 'shougo/echodoc.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'shougo/echodoc.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'thecodedself/syntastic-swift'
 Plug 'tpope/vim-commentary'
@@ -76,11 +76,6 @@ set wildmenu
 let g:mapleader = "\<Space>"
 
 inoremap jk <Esc>
-inoremap <Esc> STAHP
-noremap <left> STAHP
-noremap <up> STAHP
-noremap <right> STAHP
-noremap <down> STAHP
 nnoremap M <c-w>o
 nnoremap <leader>w :w<CR>
 nnoremap <silent> <leader>x :qa<cr>
