@@ -34,6 +34,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zchee/deoplete-jedi'
+Plug 'shumphrey/fugitive-gitlab.vim'
 
 call plug#end()
 filetype plugin indent on
@@ -117,6 +118,11 @@ set cmdheight=2
 
 let g:echodoc_enable_at_startup = 1
 " }}} echodoc "
+
+source ~/.vimrc_secrets
+" fugitive-gitlab {{{ "
+let g:fugitive_gitlab_domains = [gitlab_domain]
+" }}} fugitive-gitlab "
 
 " neomake {{{ "
 augroup neomake_commands
