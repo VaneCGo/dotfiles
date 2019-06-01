@@ -1,4 +1,3 @@
-
 ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="agnoster"
@@ -10,7 +9,7 @@ plugins=(
   brew
   bundler
   git
-  rails
+  # rails
   tmux
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -22,8 +21,12 @@ source $ZSH/oh-my-zsh.sh
 
 export RBENV_ROOT=/usr/local/var/rbenv
 
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 # Custom aliases
 alias agrep="alias | grep"
@@ -33,19 +36,14 @@ alias git="hub"
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# Fastlane
-export PATH="$HOME/.fastlane/bin:$PATH"
-
-# External Aliases
-source ~/.aliases
+# Services Helpers
+source ~/.services_startup
 
 ######## SERVICES #########
 
 alias statusservices="brew services list"
 alias startservices="brew services start postgresql; brew services start memcached"
 alias stopservices="brew services stop postgresql; brew services stop memcached"
-
-source /usr/local/share/zsh/site-functions/_aws
 
 # Xcode
 alias x="open -a Xcode *.xcodeproj"
