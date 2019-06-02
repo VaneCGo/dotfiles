@@ -83,6 +83,8 @@ nnoremap <silent> <leader><cr> :noh<cr>
 nnoremap <leader>n :e<space>
 
 " airline {{{ "
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'tomorrow'
 " }}} airline "
@@ -168,6 +170,11 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-j> <c-w>j
 nnoremap <c-l> <c-w>l
 "
+
+" Navigate buffers
+nnoremap <silent> <tab> :bnext<cr>
+nnoremap <silent> <s-tab> :bprevious<cr>
+nnoremap <silent> <leader>q  :bdelete<cr>
 
 " Create splits
 nnoremap <leader>v <c-w>v
