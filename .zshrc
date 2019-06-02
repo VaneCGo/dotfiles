@@ -9,6 +9,7 @@ plugins=(
   # rails
   brew
   bundler
+  elixir
   git
   tmux
   z
