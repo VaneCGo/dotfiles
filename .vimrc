@@ -81,6 +81,7 @@ nnoremap <leader>w :w<CR>
 nnoremap <silent> <leader>x :qa<cr>
 nnoremap <silent> <leader><cr> :noh<cr>
 nnoremap <leader>n :e<space>
+nnoremap <silent> <leader>b :b#<cr>
 
 " airline {{{ "
 let g:airline#extensions#tabline#formatter = 'unique_tail'
