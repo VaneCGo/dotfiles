@@ -123,6 +123,7 @@ nmap <silent> <leader>gd :Gvdiff<cr>
 nmap <silent> <leader>gg :Gbrowse<cr>
 
 xmap <silent> <leader>gg :Gbrowse<cr>
+xmap <silent> <leader>gb :Gblame<cr>
 " }}} fugitive "
 
 source ~/.vimrc_secrets
