@@ -157,6 +157,10 @@ nnoremap <silent> <leader>rs :!swift %<cr>
 let g:mix_format_on_save = 1
 " }}} vim-mix-format
 
+" vim-tmux-navigator {{{ "
+let g:tmux_navigator_save_on_switch = 2
+" }}} vim-tmux-navigator "
+"
 " Config files quick access
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
 nnoremap <silent> <leader>es :so $MYVIMRC<cr>
