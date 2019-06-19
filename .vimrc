@@ -132,6 +132,13 @@ source ~/.vimrc_secrets
 let g:fugitive_gitlab_domains = [gitlab_domain]
 " }}} fugitive-gitlab "
 
+" nerdtree {{{"
+let g:NERDTreeMinimalUI = 1
+
+nnoremap <silent> - :NERDTreeFind<cr>
+nnoremap <silent> <leader>k :NERDTreeToggle<cr>
+"  }}} nerdtree "
+
 " neomake {{{ "
 augroup neomake_commands
   autocmd!
@@ -166,9 +173,6 @@ nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
 nnoremap <silent> <leader>es :so $MYVIMRC<cr>
 nnoremap <silent> <leader>ez :e! ~/.zshrc<cr>
 nnoremap <silent> <leader>et :e! ~/.tmux.conf<cr>
-
-nnoremap <silent> - :NERDTreeFind<cr>
-nnoremap <silent> <leader>k :NERDTreeToggle<cr>
 
 " Navigate panes
 nnoremap <c-h> <c-w>h
