@@ -19,6 +19,7 @@ Plug 'pbrisbin/vim-mkdir'
 Plug 'rafi/awesome-vim-colorschemes'
 Plug 'raimondi/delimitMate'
 Plug 'ryanoasis/vim-devicons'
+Plug 'schickling/vim-bufonly'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
@@ -103,6 +104,10 @@ augroup vimrc
   " Remove whitespace on save
   autocmd BufWritePre * :%s/\s\+$//e
 augroup end
+
+" bufonly {{{ "
+nnoremap <silent> <leader>Q :BufOnly!<cr>
+" }}} "
 
 " deoplete {{{ "
 let g:deoplete#enable_at_startup = 1
