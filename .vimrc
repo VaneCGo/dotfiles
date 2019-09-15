@@ -132,6 +132,12 @@ xmap <silent> <leader>gg :Gbrowse<cr>
 xmap <silent> <leader>gb :Gblame<cr>
 " }}} fugitive "
 
+" Git {{{ "
+nnoremap <silent> <leader>gmr :Gmr<cr>
+" Git }}} "
+
+command! -nargs=0 Gmr !lab mr -b
+
 source ~/.vimrc_secrets
 " fugitive-gitlab {{{ "
 let g:fugitive_gitlab_domains = [gitlab_domain]
