@@ -25,6 +25,7 @@ Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'shougo/echodoc.vim'
+Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'thecodedself/syntastic-swift'
 Plug 'tpope/vim-commentary'
@@ -35,7 +36,6 @@ Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'zchee/deoplete-jedi'
-Plug 'shumphrey/fugitive-gitlab.vim'
 
 call plug#end()
 filetype plugin indent on
@@ -143,12 +143,13 @@ source ~/.vimrc_secrets
 let g:fugitive_gitlab_domains = [gitlab_domain]
 " }}} fugitive-gitlab "
 
-" nerdtree {{{"
+" NERDTree {{{ "
 let g:NERDTreeMinimalUI = 1
+let g:NERDTreeShowHidden=1
 
 nnoremap <silent> - :NERDTreeFind<cr>
 nnoremap <silent> <leader>k :NERDTreeToggle<cr>
-"  }}} nerdtree "
+" }}} NERDTree "
 
 " neomake {{{ "
 augroup neomake_commands
@@ -200,10 +201,6 @@ nnoremap <silent> <leader>q  :bdelete<cr>
 " Create splits
 nnoremap <leader>v <c-w>v
 nnoremap <leader>h <c-w>s
-
-" NERDTree {{{ "
-let NERDTreeShowHidden=1
-" }}} NERDTree "
 
 " fzf {{{ "
 set runtimepath+=/usr/local/opt/fzf
