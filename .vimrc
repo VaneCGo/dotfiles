@@ -30,6 +30,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
+Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -169,6 +170,11 @@ let g:neomake_ruby_enabled_makers = ['rubocop']
 let g:neomake_elixir_enabled_makers = ['credo']
 " }}} neomake "
 
+" projectionist {{{"
+nnoremap <silent> <leader>aa :A<cr>
+nnoremap <silent> <leader>av :AV<cr>
+" }}} projectionist "
+
 " swift {{{ "
 let g:syntastic_swift_checkers = ['swiftpm', 'swift']
 
@@ -186,8 +192,9 @@ let g:tmux_navigator_save_on_switch = 2
 " Config files quick access
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
 nnoremap <silent> <leader>es :so $MYVIMRC<cr>
-nnoremap <silent> <leader>ez :e! ~/.zshrc<cr>
+nnoremap <silent> <leader>ep :e! .projections.json<cr>
 nnoremap <silent> <leader>et :e! ~/.tmux.conf<cr>
+nnoremap <silent> <leader>ez :e! ~/.zshrc<cr>
 
 " Navigate panes
 nnoremap <c-h> <c-w>h
