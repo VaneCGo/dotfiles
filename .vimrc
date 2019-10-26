@@ -161,6 +161,8 @@ augroup neomake_commands
   autocmd BufWritePost * Neomake
 augroup END
 
+call neomake#configure#automake('nwr', 1000)
+
 let g:neomake_warning_sign = { 'text': '◉', 'texthl': 'NeomakeWarningSign' }
 let g:neomake_error_sign   = { 'text': '◉', 'texthl': 'NeomakeErrorSign' }
 let g:neomake_message_sign = { 'text': '◉', 'texthl': 'NeomakeMessageSign' }
