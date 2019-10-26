@@ -28,6 +28,7 @@ Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'thecodedself/syntastic-swift'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-git'
@@ -120,6 +121,10 @@ let g:deoplete#enable_at_startup = 1
 inoremap <expr><tab> pumvisible()? "\<c-n>" : "\<tab>"
 inoremap <expr><s-tab> pumvisible()? "\<c-p>" : "\<s-tab>"
 " }}} deoplete "
+
+" vim-dispatch {{{ "
+nnoremap z<cr> :Dispatch<cr>
+" }}} vim-dispatch "
 
 " echodoc {{{ "
 set cmdheight=2
