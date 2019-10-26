@@ -8,7 +8,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'benekastah/neomake'
 Plug 'chiel92/vim-autoformat'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'fishbullet/deoplete-ruby'
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
 Plug 'machakann/vim-highlightedyank'
@@ -23,7 +22,6 @@ Plug 'schickling/vim-bufonly'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
-Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'shougo/echodoc.vim'
 Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'terryma/vim-multiple-cursors'
@@ -35,7 +33,12 @@ Plug 'tpope/vim-git'
 Plug 'tpope/vim-rhubarb'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" Code completion
+Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'fishbullet/deoplete-ruby'
 Plug 'zchee/deoplete-jedi'
+Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 filetype plugin indent on
