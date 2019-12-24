@@ -197,7 +197,12 @@ let g:mix_format_on_save = 1
 " vim-tmux-navigator {{{ "
 let g:tmux_navigator_save_on_switch = 2
 " }}} vim-tmux-navigator "
-"
+
+" tux {{{ "
+nnoremap <silent><leader>sl :execute 'Tux mix test ' . expand('%') . ':' . line('.')<cr>
+nnoremap <silent><leader>sf :Tux mix test %<cr>
+" }}} tux "
+
 " Config files quick access
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
 nnoremap <silent> <leader>es :so $MYVIMRC<cr>
