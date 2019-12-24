@@ -135,12 +135,15 @@ let g:echodoc_enable_at_startup = 1
 
 " fugitive {{{ "
 nmap <silent> <leader>-  :Gstatus<cr><c-n>
-nmap <silent> <leader>gb :Gblame<cr>
-nmap <silent> <leader>gd :Gvdiff<cr>
-nmap <silent> <leader>gg :Gbrowse<cr>
 
-xmap <silent> <leader>gg :Gbrowse<cr>
-xmap <silent> <leader>gb :Gblame<cr>
+nnoremap <leader>gl :Gpull<cr>
+
+nnoremap <silent> <leader>gb :Gblame<cr>
+nnoremap <silent> <leader>gd :Gvdiff<cr>
+nnoremap <silent> <leader>gg :Gbrowse<cr>
+nnoremap <silent> <leader>gh :0Glog<cr>
+
+xnoremap <silent> <leader>gg :Gbrowse<cr>
 " }}} fugitive "
 
 " Git {{{ "
