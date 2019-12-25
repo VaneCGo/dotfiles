@@ -169,17 +169,12 @@ nnoremap <silent> <leader>k :NERDTreeToggle<cr>
 " }}} NERDTree "
 
 " neomake {{{ "
-augroup neomake_commands
-  autocmd!
-  autocmd BufWritePost * Neomake
-augroup END
-
 call neomake#configure#automake('nwr', 1000)
 
-let g:neomake_warning_sign = { 'text': '◉', 'texthl': 'NeomakeWarningSign' }
 let g:neomake_error_sign   = { 'text': '◉', 'texthl': 'NeomakeErrorSign' }
-let g:neomake_message_sign = { 'text': '◉', 'texthl': 'NeomakeMessageSign' }
 let g:neomake_info_sign    = { 'text': '◉', 'texthl': 'NeomakeInfoSign' }
+let g:neomake_message_sign = { 'text': '◉', 'texthl': 'NeomakeMessageSign' }
+let g:neomake_warning_sign = { 'text': '◉', 'texthl': 'NeomakeWarningSign' }
 
 let g:neomake_ruby_enabled_makers = ['rubocop']
 let g:neomake_elixir_enabled_makers = ['credo']
