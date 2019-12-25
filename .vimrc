@@ -187,6 +187,7 @@ nnoremap <silent> <leader>av :AV<cr>
 " }}} projectionist "
 
 " swift {{{ "
+let g:syntastic_enable_elixir_checker = 1
 let g:syntastic_swift_checkers = ['swiftpm', 'swift']
 
 nnoremap <silent> <leader>rs :!swift %<cr>
