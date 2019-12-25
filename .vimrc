@@ -91,6 +91,8 @@ nnoremap <silent> <leader><cr> :noh<cr>
 nnoremap <leader>n :e<space>
 nnoremap <silent> <leader>b :b#<cr>
 nnoremap <silent> <leader>cp :let @+ = expand('%') . ':' . line('.')<cr>
+nnoremap <silent> <down>  :cnext<cr>
+nnoremap <silent> <up>    :cprevious<cr>
 
 " airline {{{ "
 let g:airline#extensions#tabline#formatter = 'unique_tail'
