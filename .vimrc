@@ -158,6 +158,9 @@ command! -nargs=0 Gmr !lab mr -b
 " Update highlight color
 hi Search ctermbg=110 ctermfg=235 guibg=#343434 guifg=white cterm=NONE gui=NONE
 
+" Remove background color for panels vertical split separator
+hi VertSplit ctermbg=NONE guibg=NONE
+
 source ~/.vimrc_secrets
 " fugitive-gitlab {{{ "
 let g:fugitive_gitlab_domains = [gitlab_domain]
