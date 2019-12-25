@@ -95,7 +95,7 @@ nnoremap <silent> <down> :cnext<cr>
 nnoremap <silent> <up>   :cprevious<cr>
 nnoremap <silent> <leader><down> :cnfile<cr>
 nnoremap <silent> <leader><up>   :cpfile<cr>
-
+nnoremap <silent> <leader>= <c-w>=
 
 " airline {{{ "
 let g:airline#extensions#tabline#formatter = 'unique_tail'
