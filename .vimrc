@@ -249,8 +249,7 @@ nnoremap <leader>h <c-w>s
 " fzf {{{ "
 set runtimepath+=/usr/local/opt/fzf
 
-nnoremap <silent> <leader>O :Files<cr>
-nnoremap <silent> <leader>o :GFiles<cr>
+nnoremap <silent> <leader>o :Files<cr>
 " }}} fzf "
 
 " Tags
