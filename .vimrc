@@ -210,8 +210,17 @@ let g:tmux_navigator_save_on_switch = 2
 " }}} vim-tmux-navigator "
 
 " tux {{{ "
-nnoremap <silent><leader>sl :execute 'Tux mix test ' . expand('%') . ':' . line('.')<cr>
-nnoremap <silent><leader>sf :Tux mix test %<cr>
+augroup mix_commands
+  autocmd!
+  autocmd FileType elixir nnoremap <silent><leader>sl :execute 'Tux mix test ' . expand('%') . ':' . line('.')<cr>
+  autocmd FileType elixir nnoremap <silent><leader>sf :Tux mix test %<cr>
+augroup end
+
+augroup rspec_commands
+  autocmd!
+  autocmd FileType ruby nnoremap <silent><leader>sl :execute 'Tux rspec ' . expand('%') . ':' . line('.')<cr>
+  autocmd FileType ruby nnoremap <silent><leader>sf :Tux rspec %<cr>
+augroup end
 " }}} tux "
 
 " Config files quick access
