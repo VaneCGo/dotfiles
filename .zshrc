@@ -5,6 +5,8 @@ DEFAULT_USER=`whoami`
 
 HIST_STAMPS="mm/dd/yyyy"
 
+export BAT_CONFIG_PATH="~/.config/bat/config"
+
 plugins=(
   # rails
   brew
