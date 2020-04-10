@@ -249,7 +249,17 @@ nnoremap <leader>h <c-w>s
 " fzf {{{ "
 set runtimepath+=/usr/local/opt/fzf
 
+" Make Rg not list the actual filenames
+command! -bang -nargs=* Rg
+      \ call fzf#vim#grep(
+      \   "rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>),
+      \   1,
+      \   fzf#vim#with_preview({ 'options': '--delimiter : --nth 4..' }, 'right:50%:hidden', 'ç'),
+      \   <bang>0
+      \ )
+
 nnoremap <silent> <leader>o :Files<cr>
+nnoremap <silent> <leader>f :Rg<cr>
 " }}} fzf "
 
 " Tags
@@ -261,7 +271,6 @@ let g:ackprg = 'rg --vimgrep --smart-case'
 
 nnoremap <leader>F :Ack! -F ""<left>
 xnoremap <leader>F y:Ack! -F "<c-r>""
-
 " }}} Ack "
 
 " tagbar {{{ "
