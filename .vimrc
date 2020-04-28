@@ -153,13 +153,12 @@ xnoremap <silent> <leader>gg :Gbrowse<cr>
 " }}} fugitive "
 
 " Git {{{ "
+command! -nargs=0 Gmr !lab mr -b
 command! -nargs=0 Gmrl !lab mr -l
 
 nnoremap <silent> <leader>gmr :Gmr<cr>
 nnoremap <leader>gmrl :Gmrl<cr>
 " Git }}} "
-
-command! -nargs=0 Gmr !lab mr -b
 
 " Update highlight color
 hi Search ctermbg=110 ctermfg=235 guibg=#343434 guifg=white cterm=NONE gui=NONE
