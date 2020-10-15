@@ -107,7 +107,10 @@ let g:airline_theme = 'tomorrow'
 " autoformat {{{ "
 nnoremap <silent> <leader>b :Autoformat<cr>
 
+let g:formatdef_jq = "'jq .'"
+
 let g:formatters_ruby = ['rubocop']
+let g:formatters_json = ['jq']
 " }}} autoformat "
 
 augroup vimrc
