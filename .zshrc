@@ -24,15 +24,9 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # Environment variables
-
-export RBENV_ROOT=/usr/local/var/rbenv
-
-# export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-# export PATH="/usr/local/opt/openssl/bin:$PATH"
 # It solves No usable OpenSSl found when installing erlang
 export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
 
@@ -41,8 +35,6 @@ alias agrep="alias | grep"
 alias listdbs="psql -h localhost -c '\l'"
 alias vim="nvim"
 alias git="hub"
-
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Services Helpers
 source ~/.services_startup
