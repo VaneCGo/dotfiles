@@ -105,7 +105,7 @@ let g:airline_theme = 'tomorrow'
 " }}} airline "
 
 " autoformat {{{ "
-nnoremap <silent> <leader>f :Autoformat<cr>
+nnoremap <silent> <leader>b :Autoformat<cr>
 
 let g:formatters_ruby = ['rubocop']
 " }}} autoformat "
