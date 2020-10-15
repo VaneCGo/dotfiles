@@ -33,6 +33,8 @@ export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 # export PATH="/usr/local/opt/openssl/bin:$PATH"
+# It solves No usable OpenSSl found when installing erlang
+export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
 
 # Custom aliases
 alias agrep="alias | grep"
