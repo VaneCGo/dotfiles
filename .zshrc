@@ -13,6 +13,8 @@ plugins=(
   bundler
   elixir
   git
+  kubectl
+  kubetail
   tmux
   z
   zsh-autosuggestions
