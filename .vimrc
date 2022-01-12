@@ -254,6 +254,8 @@ nnoremap <leader>v <c-w>v
 nnoremap <leader>h <c-w>s
 
 " fzf {{{ "
+let g:fzf_layout = { 'down': '~40%' }
+
 set runtimepath+=/usr/local/opt/fzf
 
 " Make Rg not list the actual filenames
