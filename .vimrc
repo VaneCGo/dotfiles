@@ -10,6 +10,7 @@ Plug 'chiel92/vim-autoformat'
 Plug 'christoomey/vim-sort-motion'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'iovis/tux.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'keith/swift.vim'
 Plug 'machakann/vim-highlightedyank'
