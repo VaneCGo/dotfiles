@@ -204,6 +204,7 @@ nnoremap <silent> <leader>av :AV<cr>
 " swift {{{ "
 let g:syntastic_enable_elixir_checker = 1
 let g:syntastic_swift_checkers = ['swiftpm', 'swift']
+let g:syntastic_cs_checkers = ['code_checker']
 
 nnoremap <silent> <leader>rs :!swift %<cr>
 " }}} swift "
@@ -229,6 +230,13 @@ augroup rspec_commands
   autocmd FileType ruby nnoremap <silent><leader>sf :Tux rspec %<cr>
 augroup end
 " }}} tux "
+
+" omnisharp {{ "
+augroup csharp_commands
+  autocmd!
+  autocmd FileType cs nnoremap <silent><leader>d :OmniSharpGotoDefinition<cr>
+augroup end
+" }}} omnisharp "
 
 " Config files quick access
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
