@@ -4,6 +4,7 @@ filetype off
 call plug#begin()
 
 " Plugins
+Plug 'OmniSharp/omnisharp-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'benekastah/neomake'
 Plug 'chiel92/vim-autoformat'
@@ -144,16 +145,16 @@ let g:echodoc_enable_at_startup = 1
 " }}} echodoc "
 
 " fugitive {{{ "
-nmap <silent> <leader>-  :Gstatus<cr><c-n>
+nmap <silent> <leader>-  :Git<cr><c-n>
 
-nnoremap <leader>gl :Gpull<cr>
+nnoremap <leader>gl :Git pull<cr>
 
-nnoremap <silent> <leader>gb :Gblame<cr>
+nnoremap <silent> <leader>gb :Git blame<cr>
 nnoremap <silent> <leader>gd :Gvdiff<cr>
-nnoremap <silent> <leader>gg :Gbrowse<cr>
-nnoremap <silent> <leader>gh :0Glog<cr>
+nnoremap <silent> <leader>gg :GBrowse<cr>
+nnoremap <silent> <leader>gh :0Gclog<cr>
 
-xnoremap <silent> <leader>gg :Gbrowse<cr>
+xnoremap <silent> <leader>gg :GBrowse<cr>
 " }}} fugitive "
 
 " Git {{{ "
