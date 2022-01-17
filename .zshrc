@@ -1,3 +1,5 @@
+zmodload zsh/zprof
+
 ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="agnoster"
@@ -11,10 +13,10 @@ plugins=(
   rails
   brew
   bundler
-  elixir
+  # elixir
   git
   kubectl
-  kubetail
+  # kubetail
   tmux
   you-should-use
   z
@@ -29,7 +31,7 @@ export PATH="/usr/local/opt/openssl/bin:$PATH"
 export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
 # It solves No usable OpenSSl found when installing erlang
-export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
+# export KERL_CONFIGURE_OPTIONS="--without-javac --with-ssl=$(brew --prefix openssl)"
 
 # Custom aliases
 alias agrep="alias | grep"
@@ -38,7 +40,7 @@ alias vim="nvim"
 alias git="hub"
 
 # Services Helpers
-source ~/.services_startup
+# source ~/.services_startup
 
 ######## SERVICES #########
 
@@ -62,13 +64,13 @@ function restoredb() {
   rdtp
 }
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # ---- ASDF ----
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+# . $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/completions/asdf.bash
 # ---------------
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=248"
