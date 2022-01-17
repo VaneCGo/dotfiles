@@ -16,6 +16,7 @@ plugins=(
   kubectl
   kubetail
   tmux
+  you-should-use
   z
   zsh-autosuggestions
   zsh-syntax-highlighting
