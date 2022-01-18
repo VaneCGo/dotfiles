@@ -27,7 +27,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'shougo/echodoc.vim'
-Plug 'shumphrey/fugitive-gitlab.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'thecodedself/syntastic-swift'
 Plug 'tpope/vim-commentary'
@@ -155,26 +154,21 @@ nnoremap <silent> <leader>gg :GBrowse<cr>
 nnoremap <silent> <leader>gh :0Gclog<cr>
 
 xnoremap <silent> <leader>gg :GBrowse<cr>
+
+command! -nargs=0 Gpr !hub pr show
+command! -nargs=0 Gprl !hub pr list
+
+nnoremap <silent> <leader>gpr :Gpr<cr>
+nnoremap <leader>gprl :Gprl<cr>
+
+nnoremap <silent> <leader>gcom :Git checkout master<cr>
 " }}} fugitive "
-
-" Git {{{ "
-command! -nargs=0 Gmr !lab mr -b
-command! -nargs=0 Gmrl !lab mr -l
-
-nnoremap <silent> <leader>gmr :Gmr<cr>
-nnoremap <leader>gmrl :Gmrl<cr>
-" Git }}} "
 
 " Update highlight color
 hi Search ctermbg=110 ctermfg=235 guibg=#343434 guifg=white cterm=NONE gui=NONE
 
 " Remove background color for panels vertical split separator
 hi VertSplit ctermbg=NONE guibg=NONE
-
-source ~/.vimrc_secrets
-" fugitive-gitlab {{{ "
-let g:fugitive_gitlab_domains = [gitlab_domain]
-" }}} fugitive-gitlab "
 
 " NERDTree {{{ "
 let g:NERDTreeMinimalUI = 1
