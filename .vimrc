@@ -10,6 +10,7 @@ Plug 'benekastah/neomake'
 Plug 'chiel92/vim-autoformat'
 Plug 'christoomey/vim-sort-motion'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'iovis/tux.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -188,6 +189,7 @@ let g:neomake_warning_sign = { 'text': '◉', 'texthl': 'NeomakeWarningSign' }
 
 let g:neomake_ruby_enabled_makers = ['rubocop']
 let g:neomake_elixir_enabled_makers = ['credo']
+let g:neomake_go_enabled_makers = ['golangci_lint']
 " }}} neomake "
 
 " projectionist {{{"
@@ -211,6 +213,10 @@ let g:mix_format_on_save = 1
 let g:tmux_navigator_save_on_switch = 2
 " }}} vim-tmux-navigator "
 
+" vim-go {{{ "
+let g:go_asmfmt_autosave = 1
+" }}} vim-go
+
 " tux {{{ "
 augroup mix_commands
   autocmd!
@@ -231,6 +237,15 @@ augroup csharp_commands
   autocmd FileType cs nnoremap <silent><leader>d :OmniSharpGotoDefinition<cr>
 augroup end
 " }}} omnisharp "
+
+" go {{{ "
+augroup golang_commands
+  autocmd!
+  autocmd FileType go inoremap <buffer> . .<C-x><C-o>
+  autocmd FileType go nnoremap <silent><leader>e :execute 'Tux go run ' . expand('%')<cr>
+  autocmd FileType go nnoremap <silent><leader>sf :Tux go test -v ./...<cr>
+augroup END
+" }}} go "
 
 " Config files quick access
 nnoremap <silent> <leader>ee :e! $MYVIMRC<cr>
