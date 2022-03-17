@@ -197,13 +197,13 @@ nnoremap <silent> <leader>aa :A<cr>
 nnoremap <silent> <leader>av :AV<cr>
 " }}} projectionist "
 
-" swift {{{ "
+" syntastic {{{ "
 let g:syntastic_enable_elixir_checker = 1
 let g:syntastic_swift_checkers = ['swiftpm', 'swift']
 let g:syntastic_cs_checkers = ['code_checker']
 
 nnoremap <silent> <leader>rs :!swift %<cr>
-" }}} swift "
+" }}} syntastic "
 
 " vim-mix-format {{{ "
 let g:mix_format_on_save = 1
