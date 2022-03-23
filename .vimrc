@@ -70,6 +70,7 @@ set lazyredraw
 set linespace=2
 set mouse=a
 set nobackup
+set nofixendofline
 set noswapfile
 set nowritebackup
 set number
