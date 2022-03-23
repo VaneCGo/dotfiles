@@ -2,8 +2,9 @@ zmodload zsh/zprof
 
 ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="agnoster"
-DEFAULT_USER=`whoami`
+export DEFAULT_USER=`whoami`
+export LANG=en_US.UTF-8
+export ZSH_THEME="agnoster"
 
 HIST_STAMPS="mm/dd/yyyy"
 
