@@ -50,6 +50,7 @@ call plug#end()
 filetype plugin indent on
 
 " Settings
+set background=dark
 colorscheme hybrid_reverse
 
 if !has('g:sintax_on')
@@ -104,7 +105,7 @@ nnoremap <silent> <leader>= <c-w>=
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'base16'
+let g:airline_theme = 'base16_material_darker'
 " }}} airline "
 
 " autoformat {{{ "
