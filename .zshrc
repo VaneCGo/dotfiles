@@ -1,14 +1,16 @@
 zmodload zsh/zprof
 
 ZSH=$HOME/.oh-my-zsh
+HIST_STAMPS="mm/dd/yyyy"
 
 export DEFAULT_USER=`whoami`
 export LANG=en_US.UTF-8
+export TERM="screen-256color"
 export ZSH_THEME="agnoster"
-
-HIST_STAMPS="mm/dd/yyyy"
-
 export BAT_CONFIG_PATH="~/.config/bat/config"
+
+# To fetch private golang libraries
+export GOSUMDB=off
 
 plugins=(
   asdf
